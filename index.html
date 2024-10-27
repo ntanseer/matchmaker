@@ -84,36 +84,36 @@ function calculateCompatibility() {
     const MAX_SCORE = 15;
 
     // Get the current values of the dropdown controls.
-    let question1Response = document.getElementById('q1').selectedOptions[0].value;
-    let question2Response = document.getElementById('q2').selectedOptions[0].value;
-    let question3Response = document.getElementById('q3').selectedOptions[0].value;
-    let question4Response = document.getElementById('q4').selectedOptions[0].value;
-    let question5Response = document.getElementById('q5').selectedOptions[0].value;
+    let question1Response = document.getElementById("q1").selectedOptions[0].value;
+    let question2Response = document.getElementById("q2").selectedOptions[0].value;
+    let question3Response = document.getElementById("q3").selectedOptions[0].value;
+    let question4Response = document.getElementById("q4").selectedOptions[0].value;
+    let question5Response = document.getElementById("q5").selectedOptions[0].value;
 
     // Optionally log the values associated with question 1 through 5 to the console.
     console.log("Question 1 Answers:");
-    console.log(document.getElementById('q1').selectedOptions[0].text);
-    console.log(document.getElementById('q1').selectedOptions[0].value);
+    console.log(document.getElementById("q1").selectedOptions[0].text);
+    console.log(document.getElementById("q1").selectedOptions[0].value);
     console.log(question1Response);
 
     console.log("Question 2 Answers:");
-    console.log(document.getElementById('q2').selectedOptions[0].text);
-    console.log(document.getElementById('q2').selectedOptions[0].value);
+    console.log(document.getElementById("q2").selectedOptions[0].text);
+    console.log(document.getElementById("q2").selectedOptions[0].value);
     console.log(question2Response);
 
     console.log("Question 3 Answers:");
-    console.log(document.getElementById('q3').selectedOptions[0].text);
-    console.log(document.getElementById('q3').selectedOptions[0].value);
+    console.log(document.getElementById("q3").selectedOptions[0].text);
+    console.log(document.getElementById("q3").selectedOptions[0].value);
     console.log(question3Response);
 
     console.log("Question 4 Answers:");
-    console.log(document.getElementById('q4').selectedOptions[0].text);
-    console.log(document.getElementById('q4').selectedOptions[0].value);
+    console.log(document.getElementById("q4").selectedOptions[0].text);
+    console.log(document.getElementById("q4").selectedOptions[0].value);
     console.log(question4Response);
 
     console.log("Question 5 Answers:");
-    console.log(document.getElementById('q5').selectedOptions[0].text);
-    console.log(document.getElementById('q5').selectedOptions[0].value);
+    console.log(document.getElementById("q5").selectedOptions[0].text);
+    console.log(document.getElementById("q5").selectedOptions[0].value);
     console.log(question5Response);
 
     // Todo: Calculate compatibility scores.
@@ -135,7 +135,7 @@ function calculateCompatibility() {
 // Convert totalCompatibility to a percentage.
     totalCompatibility *= 100 / MAX_SCORE;
     totalCompatibility = Math.round(totalCompatibility);
-    console.log("tc="+ totalCompatibility);
+    console.log("totalCompatibility="+ totalCompatibility);
 
     document.getElementById("compatibility").innerHTML = "Your compatibility is: " + totalCompatibility;
 }

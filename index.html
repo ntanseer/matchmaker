@@ -117,11 +117,11 @@ function calculateCompatibility() {
     console.log(question5Response);
 
     // Todo: Calculate compatibility scores.
-    let question1Compatibility = 5 - Math.abs(question1Response - DESRIRED_RESPONES[5])
-    let question2Compatibility = 5 - Math.abs(question2Response - DESRIRED_RESPONES[4])
-    let question3Compatibility = 5 - Math.abs(question3Response - DESRIRED_RESPONES[5])
-    let question4Compatibility = 5 - Math.abs(question4Response - DESRIRED_RESPONES[5])
-    let question5Compatibility = 5 - Math.abs(question5Response - DESRIRED_RESPONES[5])
+    let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5])
+    let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[4])
+    let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5])
+    let question4Compatibility = 5 - Math.abs(question4Response - DESIRED_RESPONSE[5])
+    let question5Compatibility = 5 - Math.abs(question5Response - DESIRED_RESPONSE[5])
 
     console.log("c1="+question1Compatibility);
     console.log("c2="+question2Compatibility);
@@ -132,10 +132,10 @@ function calculateCompatibility() {
     // Calculate total compatibility.
     let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
 
-// Convert totalCompatibility to a percentage.
+    // Convert totalCompatibility to a percentage.
     totalCompatibility *= 100 / MAX_SCORE;
     totalCompatibility = Math.round(totalCompatibility);
-    console.log("totalCompatibility="+ totalCompatibility);
+    console.log("tc="+ totalCompatibility);
 
     document.getElementById("compatibility").innerHTML = "Your compatibility is: " + totalCompatibility;
 }
